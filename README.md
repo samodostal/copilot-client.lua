@@ -1,5 +1,5 @@
 # copilot-client.lua
-Client for [copilot.lua](https://github.com/zbirenbaum/copilot.lua) that utilizes GitHub Copilot as a tool, not as a co-pilot.
+**Client for [copilot.lua](https://github.com/zbirenbaum/copilot.lua) that utilizes GitHub Copilot as a tool, not as a co-pilot.**
 
 <p align="center">
   <img src="assets/demo.gif" alt="animated" />
