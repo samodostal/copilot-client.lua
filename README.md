@@ -6,7 +6,7 @@ Client for [copilot.lua](https://github.com/zbirenbaum/copilot.lua) that utilize
 </p>
 
 ## Pitch
-GitHub Copilot is great, but it can be obtrusive. After using it for almost a year, I can predict when it's going to give me a great suggestion, and when not. It can be very annoying how it tries to give me suggestions after almost every keystroke even though all of them are wrong. That's why I came up with this plugin. GitHub Copilot will give you suggestions only when you tell it to. That's why in the demo above you can see the ghost text after pressing `Ctrl+c` and waiting for the result.
+GitHub Copilot is great, but it can be obtrusive. After using it for almost a year, I can predict when it's going to give me a great suggestion, and when not. It can be very annoying how it tries to give suggestions after almost every keystroke even though all of them are wrong. That's why I came up with this plugin. GitHub Copilot will give you suggestions only when you tell it to. In the demo above you can see the ghost text after pressing `Ctrl+c` and waiting for the result.
 
 NOTE: The only other way of using Copilot as a [cmp source](https://github.com/zbirenbaum/copilot-cmp) didn't work well for me either. Cmp panel was too cluttered and having to scroll through suggestions slowed me down in my workflow.
 
