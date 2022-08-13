@@ -54,3 +54,8 @@ require('copilot-client').setup {
 -- Create a keymap that triggers the suggestion. To accept suggestion press <CR> as set in the setup.
 vim.api.nvim_set_keymap('i', '<C-c>', '<cmd>lua require("copilot-client").suggest()<CR>', { noremap = true, silent = true })
 ```
+
+## Plans for the future / TODO
+- [ ] Client that requests suggestions from the Language Server periodically like the standard [Github Copilot](https://github.com/github/copilot.vim) plugin. (Maybe not because it looks like [copilot.lua](https://github.com/zbirenbaum/copilot.lua) is going to [implement it](https://github.com/zbirenbaum/copilot.lua/issues/19) and I think that is a good idea)
+- [ ] Multiple suggestions, `suggest_next` and `suggest_prev` functions
+- [ ] 'Waiting for copilot' as virtual dots instead of printing to the command line
