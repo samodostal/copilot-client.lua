@@ -1,4 +1,4 @@
-local copilot_server_util = require("copilot.util")
+local copilot_server_util = require "copilot.util"
 
 local M = {}
 
@@ -10,14 +10,14 @@ end
 
 -- TODO: Show and hide copilot waiting as virtual dots animating (.) -> (..) -> (...)
 M.show_copilot_waiting = function()
-	print("Waiting for Copilot Language Server...")
+	print "Waiting for Copilot Language Server..."
 end
 
 M.hide_copilot_waiting = function(is_success)
 	if is_success then
-		print("Done!")
+		print "Done!"
 	else
-		print("No completions found.")
+		print "No completions found."
 	end
 end
 
@@ -29,7 +29,7 @@ M.show_ghost_completion = function(completion)
 
 	local lines = {}
 
-	for s, _ in display_text:gmatch("[^\n]+") do
+	for s, _ in display_text:gmatch "[^\n]+" do
 		table.insert(lines, {
 			{
 				s,
@@ -40,12 +40,12 @@ M.show_ghost_completion = function(completion)
 
 	-- BUG: This still doesn't work all the time
 	local first_line = table.remove(lines, 1)
-	if first_line[1][1]:find("^\t") ~= nil then
+	if first_line[1][1]:find "^\t" ~= nil then
 		first_line[1][1] = first_line[1][1]:sub(2)
 	end
 
-	local bnr = vim.fn.bufnr("%")
-	namespace_id = vim.api.nvim_create_namespace("copilot-client")
+	local bnr = vim.fn.bufnr "%"
+	namespace_id = vim.api.nvim_create_namespace "copilot-client"
 
 	local line_num = completion_params.doc.position.line
 	local col_num = completion_params.doc.position.character
@@ -70,11 +70,11 @@ M.insert_completion = function(completion)
 	local display_text = completion.displayText
 
 	local lines = {}
-	for s, _ in display_text:gmatch("[^\n]+") do
+	for s, _ in display_text:gmatch "[^\n]+" do
 		table.insert(lines, s)
 	end
 
-	if lines[1]:find("^\t") ~= nil then
+	if lines[1]:find "^\t" ~= nil then
 		lines[1] = lines[1]:sub(2)
 	end
 
