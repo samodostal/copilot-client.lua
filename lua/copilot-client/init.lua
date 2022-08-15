@@ -1,10 +1,10 @@
-local async = require("plenary.async")
+local async = require "plenary.async"
 
-local config = require("copilot-client.config")
-local api = require("copilot-client.api")
-local ui = require("copilot-client.ui")
-local keymaps = require("copilot-client.events.keymaps")
-local autocmds = require("copilot-client.events.autocmds")
+local config = require "copilot-client.config"
+local api = require "copilot-client.api"
+local ui = require "copilot-client.ui"
+local keymaps = require "copilot-client.events.keymaps"
+local autocmds = require "copilot-client.events.autocmds"
 
 local M = {}
 
@@ -22,7 +22,7 @@ M.suggest = function()
 	async.run(function()
 		local is_insert_mode = vim.api.nvim_get_mode().mode == "i"
 		if not is_insert_mode then
-			print("You have to be in insert mode when calling 'suggest'")
+			print "You have to be in insert mode when calling 'suggest'"
 			return
 		end
 
@@ -52,11 +52,11 @@ M.accept = function()
 end
 
 M.suggest_next = function()
-	print("'suggest_next' not yet implemented...")
+	print "'suggest_next' not yet implemented..."
 end
 
 M.suggest_prev = function()
-	print("'suggest_prev' not yet implemented...")
+	print "'suggest_prev' not yet implemented..."
 end
 
 return M
