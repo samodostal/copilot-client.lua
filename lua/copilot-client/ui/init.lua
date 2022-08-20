@@ -78,14 +78,7 @@ M.insert_completion = function(completion)
 		lines[1] = lines[1]:sub(2)
 	end
 
-	vim.api.nvim_buf_set_text(
-		0,
-		completion.position.line,
-		completion.position.character,
-		completion.position.line,
-		completion.position.character,
-		lines
-	)
+	vim.api.nvim_put(lines, "c", true, true)
 end
 
 return M
