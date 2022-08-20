@@ -2,7 +2,7 @@
 **Client for [copilot.lua](https://github.com/zbirenbaum/copilot.lua) that utilizes GitHub Copilot as a tool, not a co-pilot.**
 
 <p align="center">
-  <img src="assets/demo.gif" alt="animated" />
+  <img src="https://user-images.githubusercontent.com/44208530/185738152-60d9fe4f-b786-4791-a703-99c1f1500cab.gif" alt="animated" />
 </p>
 
 ## Pitch
