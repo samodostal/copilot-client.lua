@@ -1,3 +1,4 @@
+## !!! This plugin is deprecated in favor of new features in [copilot.lua](https://github.com/zbirenbaum/copilot.lua) (`auto_trigger = false`) !!!
 # copilot-client.lua
 **Client for [copilot.lua](https://github.com/zbirenbaum/copilot.lua) that utilizes GitHub Copilot as a tool, not a co-pilot.**
 
